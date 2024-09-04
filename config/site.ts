@@ -15,20 +15,12 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
       label: "Dashboard",
       href: "/dashboard",
     },
     {
-      label: "Logout",
-      href: "/logout",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Pay",
+      href: "/pay",
     }
   ],
   paymentModes : [
