@@ -14,6 +14,7 @@ export default async function transfer(amount:any, account:string) {
     }catch(e:any) {
         console.log(e.reason);
         alert(e.reason)
+        return null;
     }
 }
 
