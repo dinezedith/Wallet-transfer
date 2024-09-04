@@ -7,6 +7,7 @@ import {Select, SelectItem} from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
 import Webcam from "react-webcam";
 import transfer from "./ethers";
+import { Escrow } from "@/config/Blockhain/AddressController";
 
 
 
@@ -67,7 +68,7 @@ const handleAccount = (event:any) => {
  const assettransfer = async () => {
   if(img !== null && amountIn != null&& account != "") {
     setStatus(true);
-    let tx:any = await transfer(amountIn, account);
+    let tx:any = await transfer(amountIn * 1e6, account);
     setTx(tx);
     let link:string = "https://sepolia.basescan.org/tx/" + tx;
     setLink(link);
@@ -93,7 +94,7 @@ const handleAccount = (event:any) => {
               <ModalHeader className="flex flex-col gap-1" style={{color:"red", fontFamily:"monospace"}}>Payment success</ModalHeader>
               <ModalBody>
                 <p style={{fontFamily:"monospace"}}> 
-                    payer wallet : {"0xbb95E21aAA1EE00F2eB8256f57F6844C98bfE498"}
+                    payer wallet : {Escrow}
                 </p>
                 <p style={{fontFamily:"monospace"}}> 
                     receipent wallet : {account}

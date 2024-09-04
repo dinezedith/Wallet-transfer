@@ -6,11 +6,15 @@ require('dotenv')
 let provider;
 
 export default async function transfer(amount:any, account:string) {
+    try {
     let Instance:any = await getContract();
     let tx:any  = await Instance.makeTransaction(account, USDT, amount, 1000);
     tx = await tx.wait();
-    console.log(tx);
     return tx.hash;
+    }catch(e:any) {
+        console.log(e.reason);
+        alert(e.reason)
+    }
 }
 
 async function getSigner() {
