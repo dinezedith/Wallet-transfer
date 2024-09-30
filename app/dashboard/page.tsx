@@ -50,12 +50,12 @@ const capture = useCallback(async () => {
     <Card className="max-w-[400px]">
       <CardHeader className="flex gap-3">
         <div className="flex flex-col">
-          <p className="text-md" style={{ color: "violet"}}>create your fingerprint</p>
+          <p className="text-md" style={{ color: "violet"}}>Create your face Id</p>
         </div>
       </CardHeader>
       <Divider/>
       <CardBody>
-        <p>regardless of your payment experience.</p>
+        <p>rExperience your effortless payment experience with Ez.</p>
         <Spacer y = {2}/>
         <ConnectButton   accountStatus={{
     smallScreen: 'avatar',
