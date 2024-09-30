@@ -13,9 +13,9 @@ export default function Home() {
         <h1 className={title({ color: "violet" })}>Pay&nbsp;</h1>
         <br/>
         <h1 className={title()}>
-          Making Your Purchase More Easier
+          Buying Made Easy.
         </h1>
-        <h2 className={subtitle({ class: "mt-4" })}>
+        <h2 className={subtitle({ class: "mt-2" })}>
           Effortless, fast and secure.
         </h2>
       </div>
