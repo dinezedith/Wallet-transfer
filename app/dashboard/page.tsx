@@ -55,7 +55,7 @@ const capture = useCallback(async () => {
       </CardHeader>
       <Divider/>
       <CardBody>
-        <p>rExperience your effortless payment experience with Ez.</p>
+        <p>Experience your effortless payment experience with Ez.</p>
         <Spacer y = {2}/>
         <ConnectButton   accountStatus={{
     smallScreen: 'avatar',
