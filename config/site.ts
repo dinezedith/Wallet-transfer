@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "EZ Pay",
-  description: "Making your Purchase more Easier.",
+  description: "Buying Made Easy.",
   navItems: [
     {
       label: "Home",
